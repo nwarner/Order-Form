@@ -1,0 +1,7 @@
+<%= gravatar_for current_user, size: 52 %>
+<h1>
+  <%= current_user.name %>
+</h1>
+<span>
+  <%= pluralize(current_user.products.count, "product") %>
+</span>

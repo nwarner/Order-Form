@@ -1,0 +1,6 @@
+<% if @display_items.any? %>
+  <ol class="products">
+    <%= render partial: 'shared/display_item', collection: @display_items %>
+  </ol>
+  <%= will_paginate @display_items %>
+<% end %>

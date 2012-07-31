@@ -1,0 +1,11 @@
+<%= form_for(@product) do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+    <%= f.label :billing_frequency %>
+    <%= f.text_field :billing_frequency %>
+  </div>
+  <%= f.submit "Add product", class: "btn btn-large btn-primary" %>
+<% end %>
